@@ -1,0 +1,87 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: "Palanquin", sans-serif;
+   font-size: 0.9rem;
+}
+#navContainer {
+   right: 0;
+   height: 100vh;
+   width: 5%;
+   background-image: linear-gradient(0deg, #4bdec8, #5ff5ad);
+   border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
+   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
+   overflow: hidden;
+}
+#navContainer #humburger i {
+   text-align: end;
+   margin: 20px 20px;
+   float: inline-end;
+   cursor: pointer;
+}
+
+#navContainer .dashboard {
+   margin-top: 60px;
+   height: 80vh;
+   line-height: 70px;
+}
+#navContainer .dashboard form {
+   margin: 20px 0px;
+
+   display: inline-flex;
+   width: 100%;
+   text-align: start;
+   cursor: pointer;
+}
+#navContainer .dashboard form:hover {
+   background-color: #00d4ff;
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+#navContainer .dashboard form i {
+   margin: 0px 17px;
+   cursor: pointer;
+   margin-right: 20px;
+   margin-top: 25px;
+}
+@keyframes piwpiw {
+   0% {
+      rotate: 15deg;
+   }
+   20% {
+      rotate: -15deg;
+   }
+   40% {
+      rotate: 10deg;
+   }
+   60% {
+      rotate: -10deg;
+   }
+   80% {
+      rotate: 5deg;
+   }
+   100% {
+      rotate: 0deg;
+   }
+}
+#navContainer .dashboard form:hover > i {
+   animation: piwpiw 2s;
+   transition-duration: 0.5s;
+}
+#navContainer .user {
+   border-top: 1px solid black;
+   cursor: pointer;
+   display: flex;
+}
+
+#navContainer .user i {
+   margin: 25px 10px;
+   margin-right: 20px;
+}
+#navContainer .user span {
+   margin-top: 25px;
+}
